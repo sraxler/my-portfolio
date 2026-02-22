@@ -226,7 +226,7 @@
     min-height:100px;
     height:100px;
     position: absolute;
-    top: -200%;
+    top: -250%;
     right: 0%;
     opacity: 0;
     transition: all 0.5s ease;

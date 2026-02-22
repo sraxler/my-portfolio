@@ -1,21 +1,21 @@
-import react, { useState, useEffect } from "react";
+import react, { useState, useEffect, CSSProperties } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
-import Post from "./components/Post";
+import Resume from "./components/Resume";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { AnimatePresence } from "framer-motion";
 import RingLoader from "react-spinners/RingLoader";
-import { css } from "@emotion/core";
 
-const override = css`
-    display: block;
-    margin: 0 auto;
-    margin-top: 200px;
-`;
+const override = {
+    display: "block",
+    margin: "0 auto",
+    marginTop: "200px"
+}
+;
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -25,7 +25,7 @@ function App() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 2000);
     }, []);
 
     return (
@@ -34,19 +34,19 @@ function App() {
                 <RingLoader
                     color={color}
                     loading={loading}
-                    css={override}
+                    cssOverride={override}
                     size={150}
                 />
             ) : (
                 <AnimatePresence>
                     <BrowserRouter>
                         <NavBar />
-                        <Switch>
-                            <Route component={Home} path="/" exact />
-                            <Route component={About} path="/about" />
-                            <Route component={Post} path="/post" />
-                            <Route component={Project} path="/project" />
-                        </Switch>
+                        <Routes>
+                            <Route element={<Home />} path="/" exact />
+                            <Route element={<About />} path="/about" />
+                            <Route element={<Resume />} path="/resume" />
+                            <Route element={<Project />} path="/project" />
+                        </Routes>
                         <Footer />
                     </BrowserRouter>
                 </AnimatePresence>

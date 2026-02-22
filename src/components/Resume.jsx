@@ -1,7 +1,7 @@
 import React from "react";
 import CV2021 from "../documents/CV 2021.pdf";
 
-export default function Post() {
+export default function Resume() {
     return (
         <div>
             <h1

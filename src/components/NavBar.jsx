@@ -49,7 +49,7 @@ export default function NavBar() {
                         </NavLink>
                         <NavLink
                             className="navbar-text"
-                            to="/post"
+                            to="/resume"
                             onClick={closeMobileMenu}
                         >
                             Resume

@@ -11,7 +11,7 @@ import {
     DiReact,
     DiVisualstudio,
 } from "react-icons/di";
-import { SiTailwindcss, SiCsharp, SiDotnet, SiChakraui, SiBootstrap } from "react-icons/si";
+import { SiTailwindcss, SiDotnet, SiChakraui, SiBootstrap } from "react-icons/si";
 import { BiMailSend } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -138,15 +138,6 @@ export default function Home() {
                     >
                         <DiReact style={{ height: 100, width: 100 }} />
                         <p className="text-center mt-4">Reactjs</p>
-                    </motion.div>
-                    <motion.div
-                        variants={buttonVariants}
-                        whileHover="hover"
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
-                    >
-                        <SiCsharp style={{ height: 100, width: 100 }} />
-                        <p className="text-center mt-4">C#</p>
                     </motion.div>
                     <motion.div
                         variants={buttonVariants}
