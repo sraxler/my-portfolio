@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../Pictures/me.jfif";
+import me from "../Pictures/me.jpg";
 import { motion } from "framer-motion";
 
 export default function About() {

@@ -42,6 +42,13 @@ export default function NavBar() {
                         </NavLink>
                         <NavLink
                             className="navbar-text"
+                            to="/research"
+                            onClick={closeMobileMenu}
+                        >
+                            Research
+                        </NavLink>
+                        <NavLink
+                            className="navbar-text"
                             to="/project"
                             onClick={closeMobileMenu}
                         >

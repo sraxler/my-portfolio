@@ -1,7 +1,7 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
-import me from "../Pictures/me.jfif";
+import me from "../Pictures/me.jpg";
 import { motion } from "framer-motion";
 import {
     DiHtml5,
@@ -216,7 +216,7 @@ export default function Home() {
                         data-aos-duration="2000"
                     >
                         <a
-                            href="https://github.com/Savio-Fernandes-Git"
+                            href="https://github.com/sraxler"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -233,7 +233,7 @@ export default function Home() {
                         data-aos-duration="2000"
                     >
                         <a
-                            href="mailto:savio-f-tech@gmail.com"
+                            href="mailto:savio.f.tech@gmail.com"
                             target="_blank"
                             rel="noreferrer"
                         >

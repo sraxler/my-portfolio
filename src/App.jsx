@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { AnimatePresence } from "framer-motion";
 import RingLoader from "react-spinners/RingLoader";
+import Research from "./components/Research";
 
 const override = {
     display: "block",
@@ -44,6 +45,7 @@ function App() {
                         <Routes>
                             <Route element={<Home />} path="/" exact />
                             <Route element={<About />} path="/about" />
+                            <Route element={<Research />} path="/research" />
                             <Route element={<Resume />} path="/resume" />
                             <Route element={<Project />} path="/project" />
                         </Routes>
